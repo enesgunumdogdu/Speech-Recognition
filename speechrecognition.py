@@ -26,8 +26,8 @@ def listen():
         print("Algılanan kelime: " + text)
         
         # türkiye kelimesini içeriyorsa label'a "Türkiye" yazdıracağımız kısım kontrolü
-        if "türkiye" in text.lower():
-            label.config(text="Türkiye")
+        if "dur" in text.lower():
+            label.config(text="Dur")
             
     except sr.UnknownValueError:
         label.config(text="Ses anlaşılamadı")
